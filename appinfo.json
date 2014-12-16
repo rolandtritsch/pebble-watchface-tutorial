@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "rolandtritsch",
+    "longName": "Watchface Tutorial C",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "WF-Tut-C",
+    "uuid": "130b48f3-f990-4458-acc4-8c3887856651",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
