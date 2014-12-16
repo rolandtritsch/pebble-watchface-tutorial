@@ -7,7 +7,18 @@
     "longName": "Watchface Tutorial C",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_MYBACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "fonts/SourceCodePro-Regular.ttf",
+                "name": "FONT_SOURCECODEPRO_REGULAR_42",
+                "type": "font"
+            }
+        ]
     },
     "shortName": "WF-Tut-C",
     "uuid": "130b48f3-f990-4458-acc4-8c3887856651",
