@@ -8,7 +8,7 @@ static GFont s_time_font;
 static BitmapLayer* s_background_layer;
 static GBitmap* s_background_bitmap;
 
-static char* s_hellotext_buffer[5+1];
+static char s_hellotext_buffer[5+1];
 
 enum {
   KEY_HELLOTEXT = 0
@@ -18,10 +18,11 @@ static void inbox_received_callback(DictionaryIterator* iterator, void* context)
   APP_LOG(APP_LOG_LEVEL_INFO, "Inbox message reveived!");
 
   Tuple* t = dict_read_first(iterator);
-  assert(t != null);
-  assert(t->key == KEY_HELLOTEXT);
-
-  snprintf(s_hellotext_buffer, sizeof(s_hellotext_buffer), "%s", t->value->cstring);
+  if(t != NULL && t->key == KEY_HELLOTEXT) {
+    snprintf(s_hellotext_buffer, sizeof(s_hellotext_buffer), "%s", t->value->cstring);  
+  } else {
+    APP_LOG(APP_LOG_LEVEL_ERROR, "Bad message reveived!");
+  }
 }
 
 static void inbox_dropped_callback(AppMessageResult reason, void* context) {
