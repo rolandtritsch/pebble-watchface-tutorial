@@ -100,7 +100,7 @@ static void main_window_unload(Window* w) {
 }
 
 static void init() {
-  snprintf(s_hellotext_buffer, sizeof(s_hellotext_buffer), "%s", "World!");
+  snprintf(s_hellotext_buffer, sizeof(s_hellotext_buffer), "%s", "Nitro");
 
   app_message_register_inbox_received(inbox_received_callback);
   app_message_register_inbox_dropped(inbox_dropped_callback);

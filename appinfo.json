@@ -1,22 +1,19 @@
 {
     "appKeys": {},
-    "capabilities": [
-        ""
-    ],
     "companyName": "rolandtritsch",
     "longName": "Watchface Tutorial C",
     "projectType": "native",
     "resources": {
         "media": [
             {
-                "file": "fonts/SourceCodePro-Regular.ttf",
-                "name": "FONT_SOURCECODEPRO_REGULAR_42",
-                "type": "font"
-            },
-            {
                 "file": "images/background.png",
                 "name": "IMAGE_MYBACKGROUND",
                 "type": "png"
+            },
+            {
+                "file": "fonts/SourceCodePro-Regular.ttf",
+                "name": "FONT_SOURCECODEPRO_REGULAR_42",
+                "type": "font"
             }
         ]
     },
