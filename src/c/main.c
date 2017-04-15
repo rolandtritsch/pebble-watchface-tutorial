@@ -49,7 +49,7 @@ static void update_time() {
   }
 
   text_layer_set_text(s_time_layer, time_buffer);
-  text_layer_set_text(s_footer_layer, s_hellotext_buffer);
+  text_layer_set_text(s_header_layer, s_hellotext_buffer);
 }
 
 static void tick_handler(struct tm* time, TimeUnits units_change) {
@@ -78,7 +78,7 @@ static void main_window_load(Window* w) {
   text_layer_set_text_color(s_header_layer, GColorWhite);
   text_layer_set_font(s_header_layer, s_time_font);
   text_layer_set_text_alignment(s_header_layer, GTextAlignmentCenter);
-  text_layer_set_text(s_header_layer, "Hello");
+  text_layer_set_text(s_header_layer, s_hellotext_buffer);
 
   layer_add_child(window_get_root_layer(w), text_layer_get_layer(s_header_layer));
 
@@ -87,7 +87,7 @@ static void main_window_load(Window* w) {
   text_layer_set_text_color(s_footer_layer, GColorWhite);
   text_layer_set_font(s_footer_layer, s_time_font);
   text_layer_set_text_alignment(s_footer_layer, GTextAlignmentCenter);
-  text_layer_set_text(s_footer_layer, s_hellotext_buffer);
+  text_layer_set_text(s_footer_layer, "rocks");
 
   layer_add_child(window_get_root_layer(w), text_layer_get_layer(s_footer_layer));
 }
